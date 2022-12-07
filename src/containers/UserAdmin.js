@@ -63,7 +63,6 @@ export class UserAdmin extends React.Component<Props, State> {
         return (
             <>
                 <AdminHeader />
-                <NavigationBar />
                 <UserListContainer>
                     <ListHeader>
                         <h2>Users</h2>
