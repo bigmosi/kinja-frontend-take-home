@@ -10,6 +10,7 @@ import { getUsers } from '../api/profile'
 import { UserList } from '../components/UserList'
 
 import type { Kinja$User } from '../api/profile'
+import { OrderList } from '../components/OrderList'
 
 const Loading = () => <p>Loading</p>
 
@@ -68,6 +69,8 @@ export class UserAdmin extends React.Component<Props, State> {
                     {users.length ? <UserList users={users.slice(0, 10)} /> : <Loading />}
                     <ListFooter>
                     </ListFooter>
+                    <OrderList />
+
                 </UserListContainer>
             </>
         )
