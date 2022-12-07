@@ -15,6 +15,7 @@ export function UserList({ users }: Props): Array<React$Element<typeof UserItem>
 
     return (
         <div>
+            {users.length}
             <input type="search" value={query} placeholder="Search by role..." onChange={(e) => {setQuery(e.target.value)}} />
             {users.filter((user) => {
                 if (query === "") {

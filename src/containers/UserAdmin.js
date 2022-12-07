@@ -11,6 +11,7 @@ import { UserList } from '../components/UserList'
 
 import type { Kinja$User } from '../api/profile'
 import { OrderList } from '../components/OrderList'
+import {NavigationBar} from "../components/NavigationBar";
 
 const Loading = () => <p>Loading</p>
 
@@ -62,6 +63,7 @@ export class UserAdmin extends React.Component<Props, State> {
         return (
             <>
                 <AdminHeader />
+                <NavigationBar />
                 <UserListContainer>
                     <ListHeader>
                         <h2>Users</h2>
@@ -69,8 +71,6 @@ export class UserAdmin extends React.Component<Props, State> {
                     {users.length ? <UserList users={users.slice(0, 10)} /> : <Loading />}
                     <ListFooter>
                     </ListFooter>
-                    <OrderList />
-
                 </UserListContainer>
             </>
         )
