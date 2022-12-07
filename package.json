@@ -5,6 +5,7 @@
   "dependencies": {
     "react": "16.9.0",
     "react-dom": "16.9.0",
+    "react-paginate": "^8.1.4",
     "react-router-dom": "^6.4.4",
     "styled-components": "4.3.2"
   },
